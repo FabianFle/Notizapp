@@ -1,0 +1,229 @@
+/*HTML / BODY*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*######################################################################################################*/
+/*######################################################################################################*/
+
+/*Dark-Mode*/
+.dark-mode {
+    background-color: rgb(56, 56, 56);
+    color: white;
+}
+
+.darkMode {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    font-size: 20px;
+    color: white;
+    max-height: 20px;
+}
+
+.darkMode:hover {
+    color: black;
+}
+
+.darkModeImg {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+}
+
+.darkModeImg:hover {
+    border-radius: 100%;
+    background-color: gray;
+    cursor: pointer;
+}
+
+/*######################################################################################################*/
+/*######################################################################################################*/
+
+/*Headerbereich*/
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    max-height: 80px;
+}
+
+.indent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*######################################################################################################*/
+/*######################################################################################################*/
+
+/*Notizen bereich*/
+.note {
+    font-size: 50px;
+}
+
+.post {
+    width: 500px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.noteText {
+    width: 300px;
+    height: 50px;
+    border: 2px solid rgb(88, 88, 88);
+    border-radius: 8px;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.noteButton {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(255, 118, 118);
+    font-size: 20px;
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.noteButton:hover {
+    background-color: rgb(255, 0, 0);
+    font-style: italic;
+    cursor: pointer;
+}
+
+.editNote {
+    background-color: #FBBC04;
+    height: 250px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+/*######################################################################################################*/
+/*######################################################################################################*/
+
+/*Bilder von Löschen / Archive - icons*/
+.imgGarbage {
+    object-fit: cover;
+    height: 35px;
+    width: 35px;
+}
+
+.imgGarbage:hover {
+    background-color: rgb(160, 0, 0);
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.imgarchive {
+    object-fit: cover;
+    height: 35px;
+    width: 35px;
+}
+
+.imgarchive:hover {
+    background-color: rgb(87, 87, 248);
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.noteSetting {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/*######################################################################################################*/
+/*######################################################################################################*/
+
+.archiveButton {
+    border-radius: 8px;
+    border: 2px solid black;
+    background-color: lightblue;
+    font-size: 15px;
+}
+
+.archiveButton:hover {
+    border-radius: 8px;
+    border: 2px solid black;
+    background-color: rgb(4, 143, 189);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.archivePost {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    width: 500px;
+    background-color: rgb(219, 219, 219);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.noteArchiveNote {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headerArchive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hideArchive {
+    object-fit: contain;
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.hideArchive:hover {
+    cursor: pointer;
+    background-color: yellow;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.hideArchiveNote {
+    display: none;
+}

@@ -1,0 +1,51 @@
+@media (max-width: 800px) {
+
+    body {
+        height: 100vh;
+        margin: 0px;
+    }
+
+    .darkMode {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .post {
+        width: 350px;
+        height: 130px;
+        border: 2px solid black;
+        border-radius: 8px;
+        padding: 4px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .noteSetting {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .archivePost {
+        height: 460px;
+        width: 360px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .editNote {
+        height: 220px;
+        width: 320px;
+    }
+
+    .archiveButton {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+}

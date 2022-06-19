@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico.png">
+    <title>Notizblock</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body onload="render()">
+    <div class="darkMode"><img src="img/darkMode.png" onclick="darkMode()" class="darkModeImg">
+        ← Darkmode</P>
+    </div>
+    <div class="indent">
+        <div class="header">
+            <img src="img/logo.png">
+            <p class="note">Notizen</p>
+        </div>
+
+        <div>
+            <button onclick="archiveRender(), load()" id="archiveButton" class="archiveButton">Archiv Öffnen</button>
+        </div>
+
+        <div class="editNote">
+            <input type="text" id="title" placeholder="Title" class="noteText">
+            <input type="text" id="note" placeholder="Notiz" class="noteText">
+            <button onclick="noteControl()" class="noteButton">Erstellen</button>
+
+        </div>
+    </div>
+    <div class="noteArchiveNote">
+        <div id="hideArchiveNote" class="hideArchiveNote">
+            <div class="headerArchive"><h2>Archivierte Notizen</h2><img src="img/hide.png" class="hideArchive" onclick="hideArchive()"></div>
+            <div id="myarchive" class=" archivePost">
+
+            </div>
+        </div>
+
+        <div id="myposts">
+        </div>
+    </div>
+</body>
+
+</html>
